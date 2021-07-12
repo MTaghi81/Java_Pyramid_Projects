@@ -1,7 +1,7 @@
 package assignments.section3;
 import java.util.*;
 
-public class GuessingNumber {
+public class GuessingN {
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -19,9 +19,9 @@ public class GuessingNumber {
             counter++;
             System.out.println("Please enter the number between 1-20: ");
 
-            int playerGuessedNumber = scan.nextInt();
+            int playerGuessedN = scan.nextInt();
 
-            if (playerGuessedNumber == randomNumber) {
+            if (playerGuessedN == randomNumber) {
                 System.out.println("Good job," + name + "! You guessed my number in " + counter + " guesses!");
                 System.out.println("Would you like to play again? (y or n) ");
                 play = scan.next().equalsIgnoreCase("y");
@@ -30,7 +30,7 @@ public class GuessingNumber {
                 counter =0;
                // System.out.println("text: " +play);
 
-            } else if (randomNumber > playerGuessedNumber)
+            } else if (randomNumber > playerGuessedN)
                 System.out.println("Your guess is too low.\n" + "\n" + "Take a guess.");
             else
                 System.out.println("Your guess is too high.\n" + "\n" + "Take a guess.");
