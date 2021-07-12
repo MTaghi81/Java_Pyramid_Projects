@@ -4,14 +4,14 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class HangMan {
+public class Hanger {
     public static void main(String[] args) throws Exception{
         System.out.println("\n*********************");
-        System.out.println("Welcome To HangMan Game");
+        System.out.println("Welcome To Hanger Game");
         System.out.println("*********************");
         System.out.println("\nI'm thinking of some word. \n" + "You need to guess the word, letter by letter.\n"+"You have 6 lives in total.\n"+"Let's play the game...\n");
         String missedLetters ="";
-        File dictionary = new File("C:/Pushpa/pyramid-curriculum-2.0/src/assignments/section4/dictionary.txt");
+        File dictionary = new File("E:/HP Laptop/DevOps/PyramidAcademy GA/Java cohort/Java_Projects/Pyramid_Prpojects-master/dictionary.txt");
         Scanner textScanner = new Scanner(dictionary);
         Scanner input = new Scanner(System.in);
 
